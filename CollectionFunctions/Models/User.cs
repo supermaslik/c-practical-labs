@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace CollectionFunctions.Models
 {
+    [Serializable]
     public class User
     {
         public string Name { get; set; }
@@ -20,8 +21,9 @@ namespace CollectionFunctions.Models
 
             set
             {
-                Regex reg = new Regex(@"^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{8,10}$");
-                if(reg.IsMatch(value))
+                //Regex reg = new Regex(@"^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{8,10}$");
+                Regex reg = new Regex(@"^\d+$");
+                if (reg.IsMatch(value))
                 phoneNumber = value;
             }
         }

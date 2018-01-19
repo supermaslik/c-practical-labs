@@ -30,20 +30,20 @@ namespace CollectionFunctions
 
         private void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
+            ErrorTextBox.Text = "";
             User newUser = new User();
             newUser.Name = FnameBox.Text;
             newUser.SName = SnameBox.Text;
-            newUser.SName = PNumberBox.Text;
-            if (GlobalFunctions.IsNotEmpty(newUser.Name))
+            newUser.PhoneNumber = PNumberBox.Text;
+            if (!GlobalFunctions.IsNotEmpty(newUser.Name))
                 ErrorTextBox.Text += "Empty Name";
-            else if (GlobalFunctions.IsNotEmpty(newUser.SName))
+            else if (!GlobalFunctions.IsNotEmpty(newUser.SName))
                 ErrorTextBox.Text += "Empty SName";
-            else if (GlobalFunctions.IsNotEmpty(newUser.PhoneNumber))
+            else if (!GlobalFunctions.IsNotEmpty(newUser.PhoneNumber))
                 ErrorTextBox.Text += "Phone number is not march";
             else
             {
                 GlobalObject.userList.Add(newUser);
-                ErrorTextBox.Text = "Empty SName";
             }
         }
     }

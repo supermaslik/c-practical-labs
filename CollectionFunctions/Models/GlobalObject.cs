@@ -10,4 +10,15 @@ namespace CollectionFunctions.Models
     {
         public static List<User> userList = new List<User>();
     }
+
+    public static class Counter
+    {
+        public static int value = 0;
+        public static void IncreaseValue()
+        {
+            value++;
+            if (value >= 3)
+                value = 0;
+        }
+    }
 }

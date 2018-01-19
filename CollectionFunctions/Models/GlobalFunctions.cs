@@ -11,7 +11,9 @@ namespace CollectionFunctions.Models
         public static bool IsNotEmpty(params string[] strings)
         {
             for (int i = 0; i < strings.Length; i++)
-                if (strings[i].Length == 0)
+                if (strings[i] == null)
+                    return false;
+                else if (strings[i].Length == 0)
                     return false;
             return true;
         }

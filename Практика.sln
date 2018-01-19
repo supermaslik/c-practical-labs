@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Задание12Павло�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionFunctions", "CollectionFunctions\CollectionFunctions.csproj", "{D964F6E9-599D-4009-BF6C-32186A3B1917}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinGrap", "WinGrap\WinGrap.csproj", "{7841E976-567D-4235-ADCB-5D2D099857AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D964F6E9-599D-4009-BF6C-32186A3B1917}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D964F6E9-599D-4009-BF6C-32186A3B1917}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D964F6E9-599D-4009-BF6C-32186A3B1917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7841E976-567D-4235-ADCB-5D2D099857AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7841E976-567D-4235-ADCB-5D2D099857AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7841E976-567D-4235-ADCB-5D2D099857AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7841E976-567D-4235-ADCB-5D2D099857AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
